@@ -170,6 +170,12 @@ int main(void) {
 						printf("SU NUEVO VALOR ES: $ %.2f\n", costoMantenimCa);
 
 					}
+				printf("Promedio de AFC: %.2f\n", promedioAfc);
+				printf("Promedio de CAF: %.2f\n", promedioCaf);
+				printf("Promedio de CONCAF: %.2f\n", promedioConcaf);
+				printf("Promedio de UEFA: %.2f\n", promedioUefa);
+				printf("Promedio de CONMEBOL: %.2f\n", promedioConmebol);
+				printf("Promedio de OFC: %.2f\n", promedioOfc);
 				}
 				else
 				{
