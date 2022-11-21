@@ -14,4 +14,5 @@ int tipoPlantel(int afc, int caf, int uefa, int concaf, int conmebol, int ofc);
 int getIntRange(int *pValor, char *mensaje, char *msjError, int min, int max);
 int getFloatRange(float *pValor, char *mensaje, char *msjError, float min, float max);
 void limpiarPantalla();
+
 #endif /* BIBLIOTECAFUNCIONES_H_ */

@@ -62,6 +62,18 @@ int getIntRange(int *pValor, char *mensaje, char *msjError, int min, int max) {
 	return ret;
 }
 //------------------------------
+/**
+ * @fn int getFloatRange(float*, char*, char*, float, float)
+ * @brief
+
+ * @param pValor - variable puntero donde se asigna el valor pedido,
+ * @param mensaje - cadena de caracteres dispuesta para un mensaje.
+ * @param msjError - cadena de caracteres dispuesta para un mensaje de error.
+ * @param min - tipo flotante que denota el mínimo del rango establecido.
+ * @param max - tipo flotante que denota el máximo del rango establecido.
+ * @return retorna 0 en caso de que sea diferente de NULL y sea un número entero dentro del rango establecido.
+ * 		   caso contrario retorna -1.
+ */
 int getFloatRange(float *pValor, char *mensaje, char *msjError, float min, float max) {
 	int ret = -1;
 	float aux;
@@ -82,7 +94,18 @@ int getFloatRange(float *pValor, char *mensaje, char *msjError, float min, float
 	return ret;
 }
 //-----------------------------
-
+/// @fn int seleccionLiga(int, int*, int*, int*, int*, int*, int*)
+/// @brief Funcion que acumula en 1 la cantidad de confederaciones seleccionadas.
+///
+/// @param opcionLiga - tipo entero, selector del switch.
+/// @param afc - tipo entero, cantidad correspondiente a una confederacion
+/// @param caf - tipo entero, cantidad correspondiente a una confederacion
+/// @param uefa - tipo entero, cantidad correspondiente a una confederacion
+/// @param concaf - tipo entero, cantidad correspondiente a una confederacion
+/// @param conmebol - tipo entero, cantidad correspondiente a una confederacion
+/// @param ofc - tipo entero, cantidad correspondiente a una confederacion
+///
+/// @return retorna 0 si pudo realizar la suma o -1 si algo falló
 int seleccionLiga(int opcionLiga,int* afc,int* caf,int* uefa,int* concaf,int* conmebol,int* ofc)
 {
 	int ret=-1;
@@ -122,7 +145,17 @@ int seleccionLiga(int opcionLiga,int* afc,int* caf,int* uefa,int* concaf,int* co
 
 }
 //-------------------------------------
-
+/// @fn int tipoPlantel(int, int, int, int, int, int)
+/// @brief Evalúa si una de las confederaciones es mayor a todas las demas.
+///
+/// @param afc - tipo entero, cantidad correspondiente a una confederacion
+/// @param caf - tipo entero, cantidad correspondiente a una confederacion
+/// @param uefa- tipo entero, cantidad correspondiente a una confederacion
+/// @param concaf- tipo entero, cantidad correspondiente a una confederacion
+/// @param conmebol- tipo entero, cantidad correspondiente a una confederacion
+/// @param ofc- tipo entero, cantidad correspondiente a una confederacion
+///
+/// @return retorna 1 si la confederacion UEFA es mayor a todas. Caso contrario retorna 0
 int tipoPlantel(int afc, int caf, int uefa, int concaf, int conmebol, int ofc)
 {
 	int ret;
@@ -138,6 +171,10 @@ int tipoPlantel(int afc, int caf, int uefa, int concaf, int conmebol, int ofc)
 }
 
 //------------------------------------
+/// @fn void limpiarPantalla()
+/// @brief Efectúa varios saltos de línea para "vaciar" lo que haya impreso en consola
+///
+
 void limpiarPantalla()
 {
 	int cantidad=40;
